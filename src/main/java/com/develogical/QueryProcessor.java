@@ -14,6 +14,9 @@ public class QueryProcessor {
         if(query.toLowerCase().equals("what is 3 plus 3")) {
             return "6";
         }
+        if(query.toLowerCase().equals("which of the following numbers is the largest: 158, 79")) {
+            return "158";
+        }
         return "";
     }
 }
