@@ -17,6 +17,11 @@ public class QueryProcessor {
         if(query.toLowerCase().equals("which of the following numbers is the largest: 158, 79")) {
             return "158";
         }
+        if(query.toLowerCase().contains("plus")) {
+            String[] tokens = query.split(" ");
+            int res = Integer.parseInt(tokens[2]) + Integer.parseInt(tokens[4]);
+            return String.valueOf(res);
+        }
         return "";
     }
 }
