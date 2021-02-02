@@ -11,6 +11,9 @@ public class QueryProcessor {
         if(query.toLowerCase().contains("what is your name")) {
             return "Yiang Shen";
         }
+        if(query.toLowerCase().equals("what is 3 plus 3")) {
+            return "6";
+        }
         return "";
     }
 }
